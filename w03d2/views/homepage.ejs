@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+</head>
+<body>
+<h1>Welcome to the NEWEST Dating App on the Web</h1> 
+
+<a href="/singles/new">Add Profile</a>
+
+<% for (let person in listOfSingles) { %>
+<h3><a href="/singles/<%= person %>"><%= listOfSingles[person].name %></a></h3>
+<% } %>
+
+</body>
+</html>
