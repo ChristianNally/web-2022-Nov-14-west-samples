@@ -8,3 +8,4 @@
 * [W05D01 - SQL Intro](/w05d1)
 * [W05D03 - SQL from our Apps](/w05d3)
 * [W07D05 - Custom Hooks](/w07d5)
+* [W08D04 - Class-based Components](/w08d4)
