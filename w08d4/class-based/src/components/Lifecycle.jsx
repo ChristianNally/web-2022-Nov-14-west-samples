@@ -12,6 +12,7 @@ class Lifecycle extends Component {
     }
   }
 
+  // runs only once; used for setup
   // establishing a socket connection, fetching data, setting up an interval
   // useEffect(() => {}, []);
   componentDidMount() {
@@ -24,7 +25,7 @@ class Lifecycle extends Component {
     this.setState({ intervalRef: intervalRef });
   }
 
-  // did a particular thing change?
+  // runs whenever props and/or state changes
   // useEffect(() => {}, [username, student, interviewer]);
   // useEffect(() => {}, [interviewer.id]);
   componentDidUpdate(prevProps, prevState) {
@@ -34,10 +35,9 @@ class Lifecycle extends Component {
     console.log('the component has updated');
   }
 
-  // cleanup
+  // runs only once; used for cleanup
   // useEffect that returns a "cleanup" function
   componentWillUnmount() {
-    // this.setState({ intervalRef: null });
     console.log('the component will unmount');
 
     clearInterval(this.state.intervalRef);
